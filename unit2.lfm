@@ -1,0 +1,150 @@
+object SetupForm: TSetupForm
+  Left = 726
+  Height = 157
+  Top = 227
+  Width = 367
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Setup'
+  ClientHeight = 157
+  ClientWidth = 367
+  LCLVersion = '1.4.4.0'
+  object Question: TEdit
+    Left = 8
+    Height = 21
+    Top = 8
+    Width = 126
+    TabOrder = 0
+  end
+  object Answer: TEdit
+    Left = 160
+    Height = 21
+    Top = 8
+    Width = 147
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 144
+    Height = 13
+    Top = 8
+    Width = 8
+    Caption = '='
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 312
+    Height = 23
+    Top = 8
+    Width = 52
+    Caption = 'Add'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 312
+    Height = 23
+    Top = 122
+    Width = 52
+    Caption = 'Ready'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object ClearAll: TButton
+    Left = 312
+    Height = 15
+    Top = 58
+    Width = 52
+    Caption = 'Clear All'
+    OnClick = ClearAllClick
+    TabOrder = 4
+  end
+  object ClearOne: TButton
+    Left = 312
+    Height = 15
+    Top = 42
+    Width = 52
+    Caption = 'Clear 1'
+    OnClick = ClearOneClick
+    TabOrder = 5
+  end
+  object Label2: TLabel
+    Left = 48
+    Height = 15
+    Top = 32
+    Width = 48
+    Caption = 'Question'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 224
+    Height = 15
+    Top = 32
+    Width = 38
+    Caption = 'Answer'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Calibri Light'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object LatestQuestion: TLabel
+    Left = 8
+    Height = 1
+    Top = 56
+    Width = 1
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Open Sans'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object LatestAnswer: TLabel
+    Left = 160
+    Height = 1
+    Top = 56
+    Width = 1
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Open Sans'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object seconds: TLabel
+    Left = 328
+    Height = 13
+    Top = 90
+    Width = 12
+    Caption = '30'
+    ParentColor = False
+  end
+  object plus: TButton
+    Left = 346
+    Height = 15
+    Top = 82
+    Width = 18
+    Caption = '+1'
+    OnClick = plusClick
+    TabOrder = 6
+  end
+  object minus: TButton
+    Left = 346
+    Height = 15
+    Top = 98
+    Width = 18
+    Caption = '-1'
+    OnClick = minusClick
+    TabOrder = 7
+  end
+end
