@@ -129,9 +129,10 @@ begin
   ButtonArray[32] := Checker.RButton33;
 
   for i := 0 to high(buttonArray) do
+  begin
     buttonArray[i].Visible := false;
-  for i := 0 to high(buttonArray) do
     buttonArray[i].OnClick := @Checker.buttonHandler;
+  end;
 end;
 
 procedure TChecker.AlphabetChange(Sender: TObject);
